@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>voxel-multiplayer test</title>      
+  </head>
+  <body>
+    <h1>peerjs-lobby test</h1>
+    <div id="menu">
+      <input id="peer-name" type="text" placeholder="player name" min="2" required> *
+      <input type="button" value="create game" onclick="createGame()">
+      or
+      <input type="button" value="join game" onclick="joinGame()">
+    </div>
+
+    <div id="lobby" style="display:none">
+      current users in lobby:<br> 
+      <ul id="lobby-ppl"></ul> <br>
+      <input type="button" value="start game" onclick="startGame()">
+    </div>
+
+    <div id="chat" style="display:none">
+      <textarea id="chat-data" style="height:150px;"></textarea>
+      <br>
+
+      <input id="chat-input" type="text" placeholder="say something" min="1" required>
+      <input type="button" value="send" onclick="sendChat()">
+    </div>
+
+    <script src="peer.js" type="text/javascript"></script>
+    <script src="bundle.js" type="text/javascript"></script>
+  </body>
+</html>

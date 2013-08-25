@@ -1,0 +1,32 @@
+{
+  "name": "peerjs-lobby",
+  "version": "0.0.1",
+  "description": "a lobby system for peer to peer apps",
+  "main": "index.js",
+  "scripts": {
+    "start": "coffee lobbysrv.coffee",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mreinstein/peerjs-lobby.git"
+  },
+  "keywords": [
+    "voxel",
+    "multiplayer",
+    "p2p",
+    "peer to peer"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mreinstein/peerjs-lobby/issues"
+  },
+  "dependencies": {
+    "websocket-stream": "0.3.x",
+    "duplex-emitter": "2.1.x",
+    "ws": "0.4.x",
+    "commander": "2.0.x",
+    "peer": "0.2.x"
+  }
+}
